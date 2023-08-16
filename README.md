@@ -1,6 +1,8 @@
 # Keycap Label Maker
 
 # Usage
+> at the time of writing downloading *still* isn't implemented. As a workaround you can put all icons you want (svg or png) in the `icons` directory like this (for `mdi:desk-lamp` put your `desk-lamp.svg` or `desk-lamp.png` in `icons/mdi/`)
+
 1. Create `.json` (qmk-like) configuration file (you can use `config.example.json` as a reference)
 2. Install requirements with `pip install -r requirements.txt`
 3. Run `python main.py <your_config>.json`
