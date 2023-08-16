@@ -1,0 +1,53 @@
+{
+    "metadata": {
+        "author": "pacjo",
+        "qmk_keyboard": "dumbpad/v3x",
+        "qmk_keymap": "dumbpad_v3x_layout_mine",
+        "qmk_layout": "dumbpad_v3x_layout_pacjo",
+        "background_color": "#FFFFFF",
+        "border_color": "#000000"
+    },
+    "keycaps": {
+        "0": [
+            {
+                "location": "TL",
+                "icon": "mdi:brightness-5",
+                "color": "#000000"
+            },
+            {
+                "location": "CR",
+                "icon": "mdi:led-strip-variant-off",
+                "color": "#9B0000"
+            },
+            {
+                "location": "BL",
+                "icon": "mdi:skip-next",
+                "color": "#009B00"
+            }
+        ],
+        "1": [
+            {
+                "location": "TL",
+                "icon": "mdi:brightness-7",
+                "color": "#000000"
+            },
+            {
+                "location": "TR",
+                "icon": "mdi:lightbulb-on-30",
+                "color": "#9B0000"
+            },
+            {
+                "location": "CB",
+                "icon": "mdi:volume-mute",
+                "color": "#009B00"
+            }
+        ],
+        "2": [
+            {
+                "location": "CC",
+                "icon": "mdi:numeric-1",
+                "color": "#000000"
+            }
+        ]
+    }
+}

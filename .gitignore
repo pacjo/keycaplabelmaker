@@ -1,0 +1,4 @@
+icons
+output
+*.json
+!config.example.json
