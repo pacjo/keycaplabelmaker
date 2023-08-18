@@ -60,8 +60,15 @@ with open(args.json_file, "r") as json_file:
     json_object = json.load(json_file)
 
     # Create image for label grid
-    print(f'Number of keycaps: {len(json_object["keycaps"])}')
-    label_grid = Image.new("RGBA", (max_labels_horizontal*main_width_pixels, int(len(json_object['keycaps'])/max_labels_vertical+1)*main_width_pixels), "white")
+    grid_rows = (len(json_object["keycaps"]) + max_labels_horizontal - 1) // max_labels_horizontal
+    grid_columns = min(len(json_object["keycaps"]), max_labels_horizontal)
+    grid_rows = min(grid_rows, max_labels_vertical)
+
+    label_grid = Image.new("RGBA", (grid_columns*main_width_pixels, grid_rows*main_height_pixels), "white")
+
+    print(f'===========================\nNumber of keycaps: {len(json_object["keycaps"])}')
+    print(f'Max amount of labels: {max_labels_horizontal}x{max_labels_vertical}')
+    print(f'Grid dimensions: {grid_columns}x{grid_rows}')
 
     for i in range(len(json_object['keycaps'])):
         # Create a new image with white background
