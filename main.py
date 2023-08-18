@@ -32,8 +32,8 @@ def scale_image(image, main_width_pixels, main_height_pixels, scale):
         return image
 
 # Constants
-width_mm = 13       # Width in millimeters
-height_mm = 13      # Height in millimeters
+width_mm = 14       # Width in millimeters
+height_mm = 14      # Height in millimeters
 dpi = 96            # Dots per inch (96 is default for most PCs)
 border_width = 1    # Border width in pixels
 
